@@ -1,0 +1,33 @@
+https://www.superheroapi.com/api.php/10223569763528853/id
+
+{response: 'success', id: '567', name: 'Rogue', powerstats: {…}, biography: {…}, …}
+appearance
+: 
+{gender: 'Female', race: 'null', height: Array(2), weight: Array(2), eye-color: 'Green', …}
+biography
+: 
+{full-name: 'Anna Marie', alter-egos: 'No alter egos found.', aliases: Array(5), place-of-birth: 'Caldecott County, Mississippi', first-appearance: 'Avengers Annual #10 (1981)', …}
+connections
+: 
+{group-affiliation: 'X-Men, formerly X-Treme Sanctions Executive, X-Treme X-Men, Brotherhood of Evil Mutants', relatives: 'Owen (father), Priscilla (mother), Carrie (aunt), …rother), Graydon Creed (foster brother, deceased)'}
+id
+: 
+"567"
+image
+: 
+{url: 'https://www.superherodb.com/pictures2/portraits/10/100/831.jpg'}
+name
+: 
+"Rogue"
+powerstats
+: 
+{intelligence: '75', strength: '10', speed: '12', durability: '28', power: '80', …}
+response
+: 
+"success"
+work
+: 
+{occupation: 'Adventurer, former mechanic, waitress, terrorist', base: '-'}
+[[Prototype]]
+: 
+Object
