@@ -16,20 +16,19 @@ const card = (arr) => {
   power 📊: ${arr.power}<br>
   speed ⚡: ${arr.speed}<br>
   strength 💪: ${arr.strength}` )
-  console.log(arr.strength)
+  
     displayData.innerHTML=data
 }
 
 const getARandom = () => {
   id=(Math.ceil(Math.random()*731)+1)
-  console.log(id)
+  
   fetch(`${BASE_URL}/${id}`)
   .then(response => response.json())
   .then(json => {
-    // arr = {...()}
     const info = json.powerstats
     arr = {...(json.powerstats)}
-    console.log(info.intelligence)
+
     dogImage.innerHTML = `<img src='${json.image.url}'
     height=300px />`
     display.innerHTML = (json.name)
@@ -42,19 +41,17 @@ const searchByName=()=>{
   fetch(`${BASE_URL}/search/${val}`)
   .then(response => response.json())
   .then(json=>{
-    console.log(json.results[0])
     arr = {...((json.results[0]).powerstats)}
     dogImage.innerHTML = `<img src='${(json.results[0]).image.url}'
     height=300px />`
     display.innerHTML = ((json.results[0]).name)
     card(arr)
-    console.log(arr)
   })
 }
 
 
 getARandom()
-console.log('hello')
+
 refresh.onclick = (id) => getARandom()
 
 search.onclick=()=>{
